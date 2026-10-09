@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de inscrições de workshop</title>
+</head>
+<body>
+    <main>
+
+        <section id="inscricao">
+
+            <h2>Formulario de Inscricao de workshop</h2>
+            <p>Preencha os dados abaixo:</p>
+            <form action="#" method="post">
+                <fieldset>
+
+                    <legend><b>1 - Informações Pessoais</b></legend>
+
+                    <label for="campo-nome">Nome completo:</label><br>
+                    <input
+                    type="text"
+                    name="nome_completo"
+                    id="campo-nome"
+                    placeholder="informe seu nome " required
+                        size="40">
+
+                    <br>
+
+                    <label for="campo-email">Email pessoal:</label><br>
+                    <input
+                    type="email"
+                    name="email-pessoal"
+                    id="campo-email"
+                    placeholder="informe seu email" required
+                        size="40">
+
+                    <br>
+
+                    <label for="Campo-telefone">telefone pessoal:</label><br>
+                    <input
+                    type="tel"
+                    name="telefone-pessoal"
+                    id="campo-telefone"
+                    placeholder="informe seu telefone" required
+                        size="18">
+
+                    <br>
+
+                    <label for="Data-de-nascimento">Data-de-nascimento:</label><br>
+                    <input
+                    type="date"
+                    name="Data-de-nascimento"
+                    id="Data-de-nascimento">
+                  
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>2 - Preferencias do workshop </b></legend>
+
+                    <label For="Campo-curso">Selecione o workshop desejado: </label><br>
+                    <select name="seleçao-cursos" id="campo-curso"
+                    required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="front">front-end</option>
+                        <option value="back">back-end</option>
+                        <option Value="mobile">mobile</option>
+
+                    </select><br>
+
+                    <p><b>Selecione o turno do Workshop</b></p>
+
+                    <input type="radio"  name="turno_escolhido" id="campo-turno-manha" value="manha" checked>
+                    <Label for="campo-turno-manha">Turno da Manhã</Label> 
+
+                    <input type="radio"  name="turno_escolhido" id="campo-turno-tarde" value="tarde" >
+                    <Label for="campo-turno-tarde">Turno da tarde</Label> 
+
+                    <input type="radio"  name="turno_escolhido" id="campo-turno-noite" value="noite" >
+                    <Label for="campo-turno-noite">Turno da noite</Label> 
+
+                    <p><b>topicos de interese </b></p>
+                    <input type="checkbox" name="topicos[]" id="topico html" value="html">
+                    <label for="topico_Html">Html</label>
+
+                    <input type="checkbox" name="topicos[]" id="topico css" value="css">
+                    <label for="topico_Css">Css</label>
+                    
+                    <input type="checkbox" name="topicos[]" id="topico js" value="js">
+                    <label for="topico_js">Js</label>
+
+                    <br>
+
+                    <label for="campo-obcervaçao"> Observações ou duvidas</label><br>
+                    <textarea name="observaçoes_adicionais" id="campo_observaçao" rows="4" cols="50" 
+                        placeholder="informe aqui dados adicionais pertinentes ao evento... "></textarea>
+
+                    
+                </fieldset>
+
+                <br>
+                <br>
+
+                <Button type="submit"><b>Comfirmar meu cadastro</b></Button>
+
+                <Button type="reset"><b>Limpar Formulario</b></Button>
+                
+            </form>
+            
+
+        </section>
+    </main>
+</body>
+</html>
